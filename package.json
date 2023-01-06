@@ -6,11 +6,15 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon --inspect src/index.js",
     "generate-css": "node-sass -w src/resources/scss -o src/public/css",
-    "format": "prettier --single-quote --trailing-comma all --write src/**/*.js"
+    "format": "lint-staged",
+    "prepare": "husky install"
   },
   "author": "toanlv",
   "license": "ISC",
   "description": "",
+  "lint-staged": {
+    "src/**/*.{js,scss,json,hbs}": "prettier --config ./.prettierrc.json --single-quote --trailing-comma all --write"
+  },
   "dependencies": {
     "bootstrap": "^5.2.3",
     "express": "^4.18.2",
