@@ -1,0 +1,27 @@
+{
+  "name": "learing-nodejs",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --inspect src/index.js",
+    "generate-css": "node-sass -w src/resources/scss -o src/public/css",
+    "format": "prettier --single-quote --trailing-comma all --write src/**/*.js"
+  },
+  "author": "toanlv",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "jquery": "^3.6.3"
+  },
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.1"
+  }
+}

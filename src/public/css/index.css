@@ -1,0 +1,13 @@
+h1 {
+  color: red; }
+
+div.footer {
+  height: 200px;
+  margin: 0; }
+
+div.main {
+  height: 100vh; }
+
+div.body {
+  height: calc(100% - 260px);
+  margin: 0; }
